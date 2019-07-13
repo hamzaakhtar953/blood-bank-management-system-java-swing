@@ -1,23 +1,21 @@
 package SourceCode;
 
 public class Test {
+
     String name;
     int age;
-    
-    public Test()
-    {
-        name="Ammar";
-        age=23;
+
+    public Test() {
+        name = "Ammar";
+        age = 23;
     }
-    
-    public String GetName()
-    {
+
+    public String GetName() {
         return name;
     }
-    
-    public int GetAge()
-    {
+
+    public int GetAge() {
         return age;
     }
-    
+
 }
