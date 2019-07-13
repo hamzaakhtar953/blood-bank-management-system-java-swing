@@ -3,5 +3,10 @@ package SourceCode;
 public class Blood {
 
     String bloodID;
-    String bloodType;  
+    String bloodType;
+
+    public String getBloodType() {
+        return bloodType;
+    }
+
 }
