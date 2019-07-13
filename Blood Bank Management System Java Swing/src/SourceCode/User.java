@@ -5,15 +5,12 @@
  */
 package SourceCode;
 
-/**
- *
- * @author Ali
- */
 public class User {
 
     private String name;
     private String address;
     private String emailId;
+    private String location;
     private Integer phoneNumber;
 
     public User(String name, String address, String emailId, Integer phoneNumber) {
@@ -37,6 +34,14 @@ public class User {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public String getEmailId() {
