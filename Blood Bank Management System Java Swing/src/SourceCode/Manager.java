@@ -16,27 +16,23 @@ public class Manager extends User {
     public int getEmployeeId() {
         return employeeId;
     }
-    
-     // <editor-fold defaultstate="collapsed" desc="Manager Methods">
-    public void ApproveDonor()
-    {
+
+    // <editor-fold defaultstate="collapsed" desc="Manager Methods">
+    public void approveDonor() {
         //approve donor code goes here
     }
-    
-    public void ApproveSample()
-    {
+
+    public void approveSample() {
         //approve sample code goes here
     }
-    
-      public void ForwardRequest()
-    {
+
+    public void forwardRequest() {
         //forward request code goes here
     }
-        public void DrawSalary()
-    {
+
+    public void drawSalary() {
         //draw salary code goes here
     }
-    
-    // </editor-fold>
 
+    // </editor-fold>
 }

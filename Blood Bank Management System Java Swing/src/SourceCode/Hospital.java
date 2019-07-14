@@ -14,15 +14,13 @@ public class Hospital extends User {
     }
 
     // <editor-fold defaultstate="collapsed" desc="Hospital Methods">
-    public void OrderBlood()
-    {
+    public void orderBlood() {
         //order blood code goes here
     }
-    
-    public void PurchaseBlood()
-    {
+
+    public void purchaseBlood() {
         //purchase blood code goes here
     }
-    
+
     // </editor-fold>
 }
