@@ -1,9 +1,9 @@
-package SourceCode;
+package SourceCode.Users;
 
 public class Donor extends User {
 
-    public Donor(String name, String address, String emailId, Integer phoneNumber) {
-        super(name, address, emailId, phoneNumber);
+    public Donor(int userId, String name, String address, String emailId, String username, String password, int phoneNumber, String userType) {
+        super(userId, name, address, emailId, username, password, phoneNumber, userType);
     }
 
     public void donateBlood() {

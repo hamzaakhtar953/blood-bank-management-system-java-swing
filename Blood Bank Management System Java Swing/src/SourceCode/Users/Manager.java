@@ -1,15 +1,15 @@
-package SourceCode;
+package SourceCode.Users;
 
 import SourceCode.Blood.Blood;
 import java.util.ArrayList;
 
 public class Manager extends User {
 
-    private int employeeId;
+    private int employeeId; //System will generate
     private ArrayList<Blood> bloodList;
 
-    public Manager(int employeeId, String name, String address, String emailId, int phoneNumber) {
-        super(name, address, emailId, phoneNumber);
+    public Manager(int userId, int employeeId, String name, String address, String emailId, String username, String password, int phoneNumber, String userType) {
+        super(userId, name, address, emailId, username, password, phoneNumber, userType);
         this.employeeId = employeeId;
     }
 

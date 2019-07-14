@@ -1,15 +1,15 @@
-package SourceCode;
+package SourceCode.Users;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class LabAssistant extends User {
 
-    private int employeeId;
+    private int employeeId; //System will generate
     private List<Donor> donors;
 
-    public LabAssistant(String name, String address, String emailId, Integer phoneNumber, int employeeId) {
-        super(name, address, emailId, phoneNumber);
+    public LabAssistant(int userId, int employeeId, String name, String address, String emailId, String username, String password, int phoneNumber, String userType) {
+        super(userId, name, address, emailId, username, password, phoneNumber, userType);
         this.employeeId = employeeId;
         this.donors = new ArrayList<Donor>();
     }

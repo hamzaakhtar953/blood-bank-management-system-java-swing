@@ -1,11 +1,11 @@
-package SourceCode;
+package SourceCode.Users;
 
 public class Hospital extends User {
 
-    private int branchCode;
+    private int branchCode; //user will enter
 
-    public Hospital(String name, String address, String emailId, int phoneNumber, int branchCode) {
-        super(name, address, emailId, phoneNumber);
+    public Hospital(int userId, int branchCode, String name, String address, String emailId, String username, String password, int phoneNumber, String userType) {
+        super(userId, name, address, emailId, username, password, phoneNumber, userType);
         this.branchCode = branchCode;
     }
 

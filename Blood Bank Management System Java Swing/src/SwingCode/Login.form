@@ -69,7 +69,7 @@
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="txtEmail" pref="241" max="32767" attributes="0"/>
+                              <Component id="txtUsername" pref="241" max="32767" attributes="0"/>
                               <Component id="txtPassword" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -86,7 +86,7 @@
                   <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel2" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
-                      <Component id="txtEmail" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="txtUsername" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -117,7 +117,7 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="text" type="java.lang.String" value="Email"/>
+            <Property name="text" type="java.lang.String" value="Username"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
@@ -126,7 +126,7 @@
             <Property name="text" type="java.lang.String" value="Password"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtEmail">
+        <Component class="javax.swing.JTextField" name="txtUsername">
         </Component>
         <Component class="javax.swing.JPasswordField" name="txtPassword">
           <Properties>
@@ -140,6 +140,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Login"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLoginActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnExit">
           <Properties>

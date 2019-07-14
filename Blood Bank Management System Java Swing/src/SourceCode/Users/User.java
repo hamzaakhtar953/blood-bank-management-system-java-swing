@@ -1,18 +1,58 @@
-package SourceCode;
+package SourceCode.Users;
 
 public class User {
 
+    private int userId;
     private String name;
     private String address;
     private String emailId;
+    private String username;
+    private String password;
     private String location;
-    private Integer phoneNumber;
+    private int phoneNumber;
+    private String userType;
 
-    public User(String name, String address, String emailId, Integer phoneNumber) {
+    public User(int userId, String name, String address, String emailId, String username, String password, int phoneNumber, String userType) {
+        this.userId = userId;
         this.name = name;
         this.address = address;
         this.emailId = emailId;
+        this.username = username;
+        this.password = password;
         this.phoneNumber = phoneNumber;
+        this.userType = userType;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType;
     }
 
     public String getName() {
@@ -47,11 +87,11 @@ public class User {
         this.emailId = emailId;
     }
 
-    public Integer getPhoneNumber() {
+    public int getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(Integer phoneNumber) {
+    public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
