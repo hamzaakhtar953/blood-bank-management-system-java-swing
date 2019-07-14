@@ -2,6 +2,7 @@ package SwingCode;
 
 import SourceCode.BloodBank.BloodBank;
 import SourceCode.Users.*;
+import static SourceCode.constants.Constants.*;
 
 public class Login extends javax.swing.JFrame {
 
@@ -149,12 +150,20 @@ public class Login extends javax.swing.JFrame {
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         User user = BloodBank.getInstance().login(txtUsername.getText(), txtPassword.getText());
-
-        if (user != null) {
-            System.out.print(user.getUserType() + " logged in!");
+        switch (user.getUserType()) {
+            case ASSISTANT:
+                System.out.println(user.toString() + "\n\n" + "Logged in\n" + "Role: " + ASSISTANT);
+                break;
+            case RECEPTIONIST:
+                System.out.println(user.toString() + "\n\n" + "Logged in\n" + "Role: " + RECEPTIONIST);
+                break;
+            case DONOR:
+                System.out.println(user.toString() + "\n\n" + "Logged in\n" + "Role: " + DONOR);
+                break;
+            case ADMIN:
+                System.out.println(user.toString() + "\n\n" + "Logged in\n" + "Role: " + ADMIN);
+                break;
         }
-
-        System.out.println("In Login");
     }//GEN-LAST:event_btnLoginActionPerformed
 
     /**

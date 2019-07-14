@@ -3,6 +3,7 @@ package SourceCode.BloodBank;
 import SourceCode.Users.*;
 import java.util.ArrayList;
 import java.util.List;
+import static SourceCode.constants.Constants.*;
 
 public class BloodBank {
 
@@ -33,30 +34,30 @@ public class BloodBank {
     }
 
     public void Init() {
-        userList.add(new User(++currentIdNumber, null, null, null, "admin", "123", -1, "admin"));
+        userList.add(new User(++currentIdNumber, null, null, null, "admin", "123", -1, ADMIN));
     }
 
     public void createUser(String userType, String name, String address, String emailId, String username, String password, int phoneNumber, int branchCode) {
         User user = null;
 
         switch (userType) {
-            case "assistant":
+            case ASSISTANT:
                 user = new LabAssistant(++currentIdNumber, EmployeeIdGenerator(), name, address, emailId, username, password, phoneNumber, userType);
                 System.out.println("one");
                 break;
-            case "manager":
+            case MANAGER:
                 user = new Manager(++currentIdNumber, EmployeeIdGenerator(), name, address, emailId, username, password, phoneNumber, userType);
                 System.out.println("two");
                 break;
-            case "donor":
+            case DONOR:
                 user = new Donor(++currentIdNumber, name, address, emailId, username, password, phoneNumber, userType);
                 System.out.println("three");
                 break;
-            case "receptionist":
+            case RECEPTIONIST:
                 user = new Receptionist(++currentIdNumber, name, address, emailId, username, password, phoneNumber, userType);
                 System.out.println("three");
                 break;
-            case "hospital":
+            case HOSPITAL:
                 user = new Hospital(++currentIdNumber, branchCode, name, address, emailId, username, password, phoneNumber, userType);
                 System.out.println("three");
                 break;
@@ -88,7 +89,6 @@ public class BloodBank {
 
     public User searchUser(String username, String password) {
         for (User user : userList) {
-            System.out.print(user.getUsername() + " " + username + " " + user.getPassword() + " " + password);
             if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
                 return user;
             }
